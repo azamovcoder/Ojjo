@@ -1,14 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>OjjO</title>
 </head>
+
 <body>
-    <h1 class="text-blue-500">
-H1 Header
-    </h1>
+    <header class="bg-[url('/images/bgc.png')] bg-no-repeat bg-center ">
+        <div class="container mx-auto py-20">
+            <nav class=" flex items-center justify-around">
+                <ul class="flex  gap-10 text-white max-[1100px]:hidden">
+                    <li>
+                        <a href="#">Контрагентам</a>
+                    </li>
+                    <li>
+                        <a href="#">Дизайнерам</a>
+                    </li>
+                    <li>
+                        <a href="#">Вакансии</a>
+                    </li>
+                </ul>
+
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.svg" alt="here is the logo of website" />
+                    </a>
+                </div>
+
+                <ul class="flex text-white max-[1100px]:hidden">
+                    <li class="flex gap-3 items-center">
+                        <button><img alt="here is the icon of search" src="images/gridicons_search.svg" /></button>
+                        <a href="#">Поиск</a>
+                    </li>
+                    <li class="px-10 max-[1100px]:hidden ">
+                        <a href="#">Вход/Регистрация</a>
+                    </li>
+                    <li class="flex  items-center gap-6 max-[1100px]:hidden ">
+                        <button><img src="images/mdi_account.svg" alt="here is the icon of person" /></button>
+                        <button><img src="images/topcoat_like.svg" alt="here is the icon of " /></button>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="hero pt-[523px]">
+                <div class="hero__top flex flex-col gap-12 justify-center items-center">
+                    <h1 class="text-center text-white font-bold text-4xl">
+                        Долго, дорого, богато!
+                    </h1>
+                    <div>
+                        <button
+                            class="bg-transparent text-white font-bold py-5 px-8 border border-gray-300 rounded shadow uppercase duration-300 hover:bg-gray-100 hover:text-neutral-600">
+                            каталог изделий
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="flex py-6  justify-between flex-wrap">
+                <img src="images/first-screen__brands-item.svg" alt="">
+                <img src="images/first-screen__brands-item.svg" alt="">
+                <img src="images/first-screen__brands-item.svg" alt="">
+                <img src="images/first-screen__brands-item.svg" alt="">
+                <img src="images/first-screen__brands-item.svg" alt="">
+                <img src="images/first-screen__brands-item.svg" alt="">
+            </div> -->
+        </div>
+    </header>
+    <main>
+        <section class="container m-auto  p-[50px]">
+            <p class="text-center  text-xl">К мероприятиям</p>
+            <h2 class="text-center text-4xl font-bold">
+                Настоящая красота здесь!
+            </h2>
+
+            <div class="ap-tab py-10 ">
+                <ul class="ap-tab-list flex flex-wrap gap-8 py-4 w-full justify-center">
+                    <li class="ap-tab-item">
+                        <a class="ap-tab-link border-4 text-black text-xl py-1  hover:bg-black hover:text-white duration-300 px-10 focus:bg-black focus:text-[white]"
+                            href="#">Свадьба</a>
+                    </li>
+                    <li class="ap-tab-item">
+                        <a class="ap-tab-link border-4 text-black text-xl py-1  hover:bg-black hover:text-white duration-300 px-10 focus:bg-black focus:text-[white]"
+                            href="#">Мужу</a>
+                    </li>
+                    <li class="ap-tab-item">
+                        <a class="ap-tab-link border-4 text-black text-xl py-1  hover:bg-black hover:text-white duration-300 px-10 focus:bg-black focus:text-[white]"
+                            href="#">жеeне</a>
+                    </li>
+                    <li class="ap-tab-item">
+                        <a class="ap-tab-link border-4 text-black text-xl py-1  hover:bg-black hover:text-white duration-300 px-10 focus:bg-black focus:text-[white]"
+                            href="#">партеру</a>
+                    </li>
+                    <li class="ap-tab-item">
+                        <a class="ap-tab-link border-4 text-black text-xl py-1  hover:bg-black hover:text-white duration-300 px-10 focus:bg-black focus:text-[white]"
+                            href="#">коллеки</a>
+                    </li>
+                    <li class="ap-tab-item">
+                        <a class="ap-tab-link border-4 text-black text-xl py-1  hover:bg-black hover:text-white duration-300 px-10 focus:bg-black focus:text-[white]"
+                            href="#">редкост</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="ap-tab-container">
+                <div class="ap-tab-content">
+                    <div class="grid-cols-3 grid gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
+                        <div>
+                            <img src="./images/s1.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/s2.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/s3.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/s4.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/s5.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/s6.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ap-tab-content">
+                    <div class="grid-cols-3 grid gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
+                        <div>
+                            <img src="./images/g1.jpg" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/g4.jpg" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/g1.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ap-tab-content">
+                    <div class="grid-cols-3 grid gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
+                        <div>
+                            <img src="./images/s3.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/s6.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/s4.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ap-tab-content">
+                    <div class="grid-cols-3 grid gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
+                        <div>
+                            <img src="./images/e3.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/s1.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/e6.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ap-tab-content">
+                    <div class="grid grid-cols-3 gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
+                        <div>
+                            <img class="w-full" src="./images/s5.png" alt="" />
+                        </div>
+                        <div>
+                            <img class="w-full" src="./images/e4.png" alt="" />
+                        </div>
+                        <div>
+                            <img class="w-full" src="./images/s2.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="ap-tab-content">
+                    <div class="grid-cols-3 grid gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
+                        <div>
+                            <img src="./images/e5.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/s6.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/e5.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-black">
+            <div class="container mx-auto flex flex-col items-center gap-10 py-20">
+                <p class="text-white text-xl text-center ">Не знаете, что выбрать?</p>
+                <h2 class=" text-white font-semibold text-center text-wrap text-4xl">Посетите наши салоны в Москве</h2>
+                <p class=" pt-10 w-[60%] flex text-white text-center  px-auto">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Ut duis tortor vitae pellentesque egestas quam pulvinar.
+                    Pellentesque porttitor velit sit pellentesque. Suspendisse donec pretium id dignissim. Dignissim
+                    ultrices eget orci
+                    viverra. Egestas quis et ut ultrices imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi
+                    libero viverra ipsum.</p>
+
+                <button
+                    class=" w-[200px] bg-transparent text-white font-bold py-4 px-8 border border-gray-300 rounded shadow uppercase duration-300 hover:bg-gray-100 hover:text-neutral-600">наши
+                    салоны</button>
+            </div>
+        </section>
+        <section>
+            <div class=" items-center flex flex-col container mx-auto p-[50px]">
+
+                <p class="text-center font-semibold text-xl">Полезные статьи</p>
+                <h2 class="text-center font-bold text-4xl">Мы в социальных сетях</h2>
+                <div class="flex pt-10 gap-10 justify-between max-md:flex-wrap max-md:justify-center">
+                    <div><img class="w-full" src="images/b1.png" alt=""></div>
+                    <div><img class="w-full" src="images/b2.png" alt=""></div>
+                    <div><img class="w-full" src="images/b3.png" alt=""></div>
+                </div>
+                <button
+                    class=" mt-10 w-[250px] bg-transparent text-black font-bold py-4 px-8 border border-gray-300 rounded shadow uppercase duration-300 hover:bg-gray-100 hover:text-neutral-600">читать
+                    наш блог</button>
+            </div>
+        </section>
+        <section>
+            <div class="container mx-auto p-[50px]">
+                <p class="text-center font-medium text-xl">#ojjo_jewerly</p>
+                <h2 class="text-center font-bold text-4xl">Мы в социальных сетях</h2>
+                <div class="grid grid-cols-4  pt-20 max-xl:grid-cols-4">
+                    <div class="col-span-2 row-span-1 max-xl:col-span-4"><img class="w-full" src="images/e1.png" alt="">
+                    </div>
+                    <div class="col-span-1 row-span-1 max-xl:col-span-2 max-md:col-span-4 h-[340px]"><img class="w-full"
+                            src="images/e2.png" alt=""></div>
+                    <div class="col-span-1 row-span-1 max-xl:col-span-2 max-md:col-span-4 h-[340px]"><img
+                            class="w-full " src="images/e3.png" alt=""></div>
+                    <div class="col-span-1 row-span-1 max-xl:col-span-2 max-md:col-span-4 h-[340px]"><img
+                            class="w-full " src="images/e4.png" alt=""></div>
+                    <div class="col-span-1 row-span-1 max-xl:col-span-2 max-md:col-span-4 h-[340px]"><img
+                            class="w-full " src="images/e5.png" alt=""></div>
+                    <div class="col-span-2 row-span-1 max-xl:col-span-4"><img class="w-full " src="images/e6.png"
+                            alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[url('/images/bg2.png')]">
+            <div class="container mx-auto m-[50px] py-20">
+                <p class="text-white text-center font-semibold text-lg py-5">Полезные советы и персональный предложения</p>
+                <h2 class="text-white text-center font-bold text-4xl pb-12">Эксклюзивная рассылка</h2>
+                <div class="flex justify-center gap-48 items-center max-sm:flex-col max-sm:gap-20">
+                    <div>
+                        <ul>
+                            <li class="flex gap-4">
+                                <img src="images/ul1.svg" alt=""> <span class="text-white font-medium text-xl">Личный
+                                    менеджер</span>
+                            </li>
+                            <li class="flex gap-4">
+                                <img src="images/ul1.svg" alt=""> <span class="text-white font-medium text-xl">Доставка и оформление</span>
+                            </li>
+                            <li class="flex gap-4">
+                                <img src="images/ul1.svg" alt=""> <span class="text-white font-medium text-xl">Индивидуальный дизайн</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                    <form class="max-w-sm mx-auto">
+                        <label for="email-address-icon" class="block mb-2 text-sm font-medium text-white">Your
+                            Email</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 16">
+                                    <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                                    <path
+                                        d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                                </svg>
+                            </div>
+                            <input type="text" id="email-address-icon"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="name@flowbite.com">
+                        </div>
+                    </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container mx-auto m-[50px]">
+        <div class="mx-auto w-full max-w-screen-xl">
+            <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Полезные ссылки</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="#" class=" hover:underline">Доставка</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Оплата</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Акции</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">оплата</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"><img src="images/f1.svg" alt=""></a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"> <img src="images/f2.svg" alt=""> </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">контакты</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4 ">
+                            <a href="#" class="hover:underline flex items-center gap-4"><img src="images/f3.svg" alt=""> 8 (812) 234-56-55</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline flex items-center gap-4"><img src="images/f3.svg" alt="">8 (812) 234-56-55</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline flex items-center gap-4 "><img src="images/f4.svg" alt="">ojjo@ojjo.ru</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">социальные сети</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</a>
+                        </li>
+                        <li class="mb-4 flex gap-2 items-center">
+                            <a href="#" class="hover:underline"><img src="images/ft1.svg" alt=""></a>
+                            <a href="#" class="hover:underline"><img src="images/ft2.svg" alt=""></a>
+                            <a href="#" class="hover:underline"><img src="images/ft3.png" alt=""></a>
+                            <a href="#" class="hover:underline"><img src="images/ft4.svg" alt=""></a>
+                            <a href="#" class="hover:underline"><img src="images/ft5.svg" alt=""></a>
+                            <a href="#" class="hover:underline"><img src="images/ft6.svg" alt=""></a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class=" container m-auto pt-2 flex justify-between border-t-2 border-black border-solid max-lg:flex-wrap gap-3">
+                <p class="font-medium text-lg">(c) 2020 OJJO jewelry</p>
+                <p class="font-medium text-lg">Договор публичной офферты</p>
+                <p class="font-medium text-lg">Контрагентам</p>
+                <p class="font-medium text-lg">Сделано Figma.info</p>
+                
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/abdulazizcreator/ap-tab/main.js"></script>
 </body>
+
 </html>
